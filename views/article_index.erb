@@ -1,0 +1,9 @@
+<h2> Articles </h2>
+
+<ol>
+  <% @articles.each do |article|%>
+  <li><a href="<%=article["url"]%>" target="_blank"><%=article["title"] %></a>
+    <p><%=article["description"]%></p>
+  </li>
+  <% end %>
+</ol>
